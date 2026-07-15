@@ -88,6 +88,10 @@ def student_screen():
     st.space()
     show_registration = False
     photo_source = st.camera_input("Postion your face in the center")
+    if photo_source is None:
+        st.info("If you just allowed camera permission,click below")
+        if st.button("Open camera"):
+            st.rerun()
     if photo_source:
         img = np.array(Image.open(photo_source).convert("RGB"))
         with st.spinner("AI is scanning.."):

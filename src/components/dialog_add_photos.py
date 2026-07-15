@@ -22,7 +22,7 @@ def add_photos_dialog():
     if st.session_state.photo_tab=="camera":
         cam_photo = st.camera_input("Take snapshot",key="dialog_cam")
         if cam_photo is None:
-            st.info("If you just allowed camera permission, click the button below")
+            st.info("If you have just allowed camera permission, click the button below")
             if st.button("Retry camera",width="stretch"):
                 st.rerun()
                 st.session_state.photo_tab=="camera"

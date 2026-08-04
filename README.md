@@ -63,23 +63,7 @@ pip install -r requirements.txt
 
 Run the application:
 
-streamlit run Home.py
-Project Structure
-ClassLens/
-│
-├── Home.py
-├── pages/
-├── utils/
-├── assets/
-├── requirements.txt
-└── README.md
-Future Enhancements
-Face anti-spoofing
-Multi-face attendance
-Attendance analytics dashboard
-Mobile application
-Role-based access control
-Email notifications
+streamlit run app.py
 Author
 
 Madhavendra Gautam

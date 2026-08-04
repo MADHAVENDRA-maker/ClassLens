@@ -22,10 +22,7 @@ def add_photos_dialog():
     if st.session_state.photo_tab=="camera":
         cam_photo = st.camera_input("Take snapshot",key="dialog_cam")
         if cam_photo is None:
-            st.info("If you have just allowed camera permission, click the button below")
-            if st.button("Retry camera",width="stretch"):
-                st.rerun()
-                st.session_state.photo_tab=="camera"
+            st.info("If you are adding photos for the first time, you may have to reload the application after allowing the camera permissons")
         if cam_photo:
             st.session_state.attendance_images.append(ImageOps.exif_transpose(Image.open(cam_photo)))
             st.toast("Photo captured")

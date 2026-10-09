@@ -56,5 +56,3 @@ streamlit run app.py
 
 **Madhavendra Gautam**  
 Indian Institute of Technology Jammu
-
-Interested in AI/ML, computer vision, and data science.

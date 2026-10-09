@@ -1,74 +1,60 @@
-ClassLens
+# ClassLens — AI-Powered Attendance System
 
-ClassLens is an AI-powered attendance management system that automates classroom attendance using facial recognition. Built with Streamlit, Python, and computer vision techniques, it provides an intuitive interface for teachers and students while eliminating the need for manual attendance.
+ClassLens is a facial recognition-based attendance system built with Python and Streamlit. It simplifies classroom attendance by identifying registered students and recording their attendance automatically, with separate portals for teachers and students.
 
-Live Demo: https://classlens-mainsite.streamlit.app/
+**Live Demo:** https://classlens-mainsite.streamlit.app/
 
-Features
-AI-based facial recognition for attendance
-Separate teacher and student portals
-Student registration with facial embeddings
-Automatic attendance marking
-Attendance history and record management
-Secure authentication
-Supabase-backed cloud database
-Responsive web interface built with Streamlit
-Technology Stack
+## Features
 
-Frontend
+- Facial recognition for automated attendance
+- Separate teacher and student portals
+- Student registration and facial embedding generation
+- SVM-based face classification
+- Automatic attendance recording and history management
+- Supabase integration for cloud-based data storage
+- Simple, interactive web interface
 
-Streamlit
-HTML/CSS
+## Tech Stack
 
-Backend
+- **Frontend:** Streamlit, HTML, CSS
+- **Backend:** Python
+- **Computer Vision:** OpenCV, dlib, face_recognition_models
+- **Machine Learning:** scikit-learn, Support Vector Machine (SVM)
+- **Database:** Supabase
+- **Data Processing:** NumPy, Pandas, Pillow
 
-Python
+## How It Works
 
-Machine Learning
+1. Teachers register students through the application.
+2. The system extracts facial embeddings from student images.
+3. An SVM classifier is trained using the stored embeddings.
+4. During attendance, the system identifies students from their faces.
+5. Attendance records are saved to Supabase for future reference.
 
-dlib
-face_recognition_models
-scikit-learn
-Support Vector Machine (SVM)
+## Installation and Setup
 
-Database
+**1. Clone the repository**
 
-Supabase
-
-Libraries
-
-OpenCV
-NumPy
-Pandas
-Pillow
-System Workflow
-Register students through the teacher portal.
-Capture and generate facial embeddings.
-Train an SVM classifier using the stored embeddings.
-Detect and recognize students during attendance.
-Record attendance automatically in the database.
-Installation
-
-Clone the repository:
-
-git clone https://github.com/<your-username>/ClassLens.git
-
-Navigate to the project directory:
-
+```bash
+git clone https://github.com/MADHAVENDRA-maker/ClassLens.git
 cd ClassLens
+```
 
-Install the required dependencies:
+**2. Install dependencies**
 
+```bash
 pip install -r requirements.txt
+```
 
-Run the application:
+**3. Run the application**
 
+```bash
 streamlit run app.py
+```
 
-Author
+## Author
 
-Madhavendra Gautam
+**Madhavendra Gautam**  
+Indian Institute of Technology Jammu
 
-B.Tech, Indian Institute of Technology Jammu
-
-Interested in Artificial Intelligence, Machine Learning, Computer Vision, and Data Science.
+Interested in AI/ML, computer vision, and data science.
